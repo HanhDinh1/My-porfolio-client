@@ -22,7 +22,7 @@ function HomePage() {
     const download=(e) => {
         e.preventDefault();
         Axios({
-            url:"REACT_APP_API_URL",
+            url:REACT_APP_API_URL,
             method: "GET",
             responseType:"blob"
        }).then((res) =>{
