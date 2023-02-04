@@ -2,6 +2,7 @@ import { useRef } from "react";
 import React from "react";
 import  Axios from "axios";
 import FileDownload from "js-file-download";
+import axios from "axios";
 
 
 function HomePage() {
@@ -22,7 +23,7 @@ function HomePage() {
     const download=(e) => {
         e.preventDefault();
         Axios({
-            url:REACT_APP_API_URL,
+            url:`${process.env.REACT_APP_API_URL}`,
             method: "GET",
             responseType:"blob"
        }).then((res) =>{
@@ -30,7 +31,10 @@ function HomePage() {
             FileDownload(res.data, "HanhResume.png")
        })
       }
-
+    //   const download = (e)=>{
+    //     e.preventDefault();
+    //     axios.get('')
+    //   }
     return (
         <div className="App ">
             <div ref={home} className="hero">
