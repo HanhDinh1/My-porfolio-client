@@ -33,8 +33,8 @@ function HomePage() {
       const download = (e)=>{
         e.preventDefault();
         axios.get(`${process.env.REACT_APP_API_URL}`).then((response)=>{
-            console.log(res)
-            FileDownload(res.data, "HanhResume.png")
+            console.log(response)
+            FileDownload(response.data, "HanhResume.png")
         })
       }
     return (
