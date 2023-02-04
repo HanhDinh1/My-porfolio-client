@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import React from "react";
-import  Axios from "axios";
+import  axios from "axios";
 import FileDownload from "js-file-download";
+// import { response } from "express";
 
 function HomePage() {
 
@@ -18,21 +19,24 @@ function HomePage() {
         });
       };
 
-    const download=(e) => {
-        e.preventDefault();
-        Axios({
-            url:`${process.env.REACT_APP_API_URL}`,
-            method: "GET",
-            responseType:"blob"
-       }).then((res) =>{
-        console.log(res);
-            FileDownload(res.data, "HanhResume.png")
-       })
-      }
-    //   const download = (e)=>{
+    // const download=(e) => {
     //     e.preventDefault();
-    //     axios.get('')
+    //     Axios({
+    //         url:`${process.env.REACT_APP_API_URL}`,
+    //         method: "GET",
+    //         responseType:"blob"
+    //    }).then((res) =>{
+    //     console.log(res);
+    //         FileDownload(res.data, "HanhResume.png")
+    //    })
     //   }
+      const download = (e)=>{
+        e.preventDefault();
+        axios.get(`${process.env.REACT_APP_API_URL}`).then((response)=>{
+            console.log(res)
+            FileDownload(res.data, "HanhResume.png")
+        })
+      }
     return (
         <div className="App ">
             <div ref={home} className="hero">
