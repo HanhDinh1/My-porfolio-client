@@ -2,8 +2,6 @@ import { useRef } from "react";
 import React from "react";
 import  Axios from "axios";
 import FileDownload from "js-file-download";
-import axios from "axios";
-
 
 function HomePage() {
 
