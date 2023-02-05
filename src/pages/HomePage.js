@@ -19,24 +19,24 @@ function HomePage() {
         });
       };
 
-    // const download=(e) => {
-    //     e.preventDefault();
-    //     Axios({
-    //         url:`${process.env.REACT_APP_API_URL}`,
-    //         method: "GET",
-    //         responseType:"blob"
-    //    }).then((res) =>{
-    //     console.log(res);
-    //         FileDownload(res.data, "HanhResume.png")
-    //    })
-    //   }
-      const download = (e)=>{
+    const download=(e) => {
         e.preventDefault();
-        axios.get(`${process.env.REACT_APP_API_URL}`).then((response)=>{
-            console.log(response)
-            FileDownload(response.data, "HanhResume.png")
-        })
+        axios({
+            url:`${process.env.REACT_APP_API_URL}`,
+            method: "GET",
+            responseType:"blob"
+       }).then((res) =>{
+        console.log(res);
+            FileDownload(res.data, "HanhResume.png")
+       })
       }
+    //   const download = (e)=>{
+    //     e.preventDefault();
+    //     axios.get(`${process.env.REACT_APP_API_URL}`).then((response)=>{
+    //         console.log(response)
+    //         FileDownload(response.data, "HanhResume.png")
+    //     })
+    //   }
     return (
         <div className="App ">
             <div ref={home} className="hero">
