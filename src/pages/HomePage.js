@@ -1,10 +1,12 @@
 import { useRef } from "react";
 import React from "react";
-import  axios from "axios";
+import  Axios from "axios";
 import FileDownload from "js-file-download";
 // import { response } from "express";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import {Container} from 'react-bootstrap'
 
 function HomePage() {
 
@@ -23,7 +25,7 @@ function HomePage() {
 
     const download=(e) => {
         e.preventDefault();
-        axios({
+        Axios({
             url:`${process.env.REACT_APP_API_URL}`,
             method: "GET",
             responseType:"blob"
@@ -54,7 +56,7 @@ function HomePage() {
                 </nav>
             </div>
 
-            <section className="top-container">
+            <Container className="top-container">
                 <div>
                     <img className="profile-img" src="images/profile-img.png" alt="profile-img"/>
                 </div>
@@ -65,14 +67,14 @@ function HomePage() {
                     <h3>a <span>Fullstack Web Developer</span> based in Pittsburgh, Pennsylvania.</h3> 
                 </div>
                 
-            </section>
+            </Container>
 
             {/* <div className="middle-container"> */}
                 <div  ref={about} className="profile">
-                    <div class="ratio ratio-21x9">
-                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                    <div className="ratio ratio-21x9">
+                        <iframe src="https://www.youtube.com/embed/sCwxqzt0BBI" title="YouTube video" allowfullscreen></iframe>
                     </div>
-                    
+                                       
                     <div>
                         <img className="profile-picture" src="Images/Hanh.png" alt="Hanh Dinh"/>
                         <h2>Hi there,</h2>
