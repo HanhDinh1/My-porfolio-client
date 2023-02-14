@@ -56,7 +56,7 @@ function HomePage() {
                 </nav>
             </div>
 
-            <Container className="top-container">
+            <section className="top-container">
                 <div>
                     <img className="profile-img" src="images/profile-img.png" alt="profile-img"/>
                 </div>
@@ -67,10 +67,10 @@ function HomePage() {
                     <h3>a <span>Fullstack Web Developer</span> based in Pittsburgh, Pennsylvania.</h3> 
                 </div>
                 
-            </Container>
+            </section>
 
             {/* <div className="middle-container"> */}
-                <div  ref={about} className="profile">
+                <Container  ref={about} className="profile">
                     <div className="ratio ratio-21x9">
                         <iframe src="https://www.youtube.com/embed/sCwxqzt0BBI" title="YouTube video" allowfullscreen></iframe>
                     </div>
@@ -85,7 +85,7 @@ function HomePage() {
                         <p className="intro">Outside work, I really enjoy creating delicious food, playing chess and hanging out in bookstores.</p>
                     </div>
 
-                </div>
+                </Container>
 
                 <hr/>
 
