@@ -4,6 +4,8 @@ import  axios from "axios";
 import FileDownload from "js-file-download";
 // import { response } from "express";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function HomePage() {
 
     const home = useRef(null);
@@ -67,13 +69,20 @@ function HomePage() {
 
             {/* <div className="middle-container"> */}
                 <div  ref={about} className="profile">
-                    <img className="profile-picture" src="Images/Hanh.png" alt="Hanh Dinh"/>
-                    <h2>Hi there,</h2>
-                    <p className="intro">My name is <span><strong>Hanh</strong></span>, a <span><strong>Fullstack Web Developer</strong></span> based in Pittsburgh, PA who enjoys building web applications and specializes in the MERN stack.</p>
-                    <br/>
-                    <p className="intro">I'm a very positive, highly motivated person with a strong desire to continue learning and challenging myself</p>
-                    <br/>
-                    <p className="intro">Outside work, I really enjoy creating delicious food, playing chess and hanging out in bookstores.</p>
+                    <div class="ratio ratio-21x9">
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div>
+                        <img className="profile-picture" src="Images/Hanh.png" alt="Hanh Dinh"/>
+                        <h2>Hi there,</h2>
+                        <p className="intro">My name is <span><strong>Hanh</strong></span>, a <span><strong>Fullstack Web Developer</strong></span> based in Pittsburgh, PA who enjoys building web applications and specializes in the MERN stack.</p>
+                        <br/>
+                        <p className="intro">I'm a very positive, highly motivated person with a strong desire to continue learning and challenging myself</p>
+                        <br/>
+                        <p className="intro">Outside work, I really enjoy creating delicious food, playing chess and hanging out in bookstores.</p>
+                    </div>
+
                 </div>
 
                 <hr/>
@@ -131,7 +140,7 @@ function HomePage() {
                                     </ul>
                                 </div>
                                 <div>
-                                <a className="view-project" href="https://languageshot.netlify.app/">View Project</a>
+                                <a className="view-project" href="https://myrunway.fly.dev/">View Project</a>
                                 </div>
                             </div>    
                         </div>

@@ -83,6 +83,9 @@ p{
 }
 .profile {
 margin-top: 4%;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
 } 
 .profile-picture{
   width: 15%;
@@ -95,7 +98,7 @@ margin-top: 4%;
   padding: 50px 0 20px;
 }
 .intro{
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 .contact-message{
