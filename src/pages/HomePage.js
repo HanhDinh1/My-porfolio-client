@@ -72,7 +72,7 @@ function HomePage() {
             {/* <div className="middle-container"> */}
                 <Container  ref={about} className="profile">
                     <div className="ratio ratio-21x9">
-                        <iframe src="https://www.youtube.com/embed/sCwxqzt0BBI" title="YouTube video" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/sCwxqzt0BBI" title="YouTube video" allowFullScreen></iframe>
                     </div>
                                        
                     <div>
