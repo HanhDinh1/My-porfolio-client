@@ -184,7 +184,7 @@ function HomePage() {
             {/* </div> */}
 
             <div className="bottom-container">
-                <a className="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+                <a className="footer-link" href="https://www.linkedin.com/in/hanhdinhe/">LinkedIn</a>
                 <a className="footer-link" href="https://github.com/HanhDinh1">Github</a>
                 <a className="footer-link" href="https://profile.ironhack.com/hanh-dinh">Website</a>
                 <p className="copyright">© 2023 Hanh Dinh.</p>
